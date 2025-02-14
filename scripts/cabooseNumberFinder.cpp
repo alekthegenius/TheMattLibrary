@@ -60,7 +60,7 @@ int main() {
             cout << "Iteration Number: " << i << endl;
 
             cout << "Percentage: " << percentage << endl;
-            cout << "-----------------------: " << i << endl;
+            cout << "------------------------" << endl;
 
             for (mpz_class j = 1; j < i; j++) {
 
