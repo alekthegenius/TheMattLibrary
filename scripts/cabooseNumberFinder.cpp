@@ -57,7 +57,10 @@ int main() {
 
             mpf_class percentage = (f_i / f_iterations) * 100;
 
+            cout << "Iteration Number: " << i << endl;
+
             cout << "Percentage: " << percentage << endl;
+            cout << "-----------------------: " << i << endl;
 
             for (mpz_class j = 1; j < i; j++) {
 
