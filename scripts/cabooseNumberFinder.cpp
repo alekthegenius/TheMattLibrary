@@ -41,6 +41,15 @@ int main() {
 
         for (mpz_class i = mpz_class(start_num); i < mpz_class(end_num); i++) {
 
+
+            mpz_class is_even;
+
+            mpz_mod(is_even.get_mpz_t(), i.get_mpz_t(), mpz_class(2).get_mpz_t());
+
+            if (is_even == mpz_class(0)) {
+                continue;
+            }
+
             vector<mpz_class> j_list;
 
             mpf_class f_i = mpz_class(i) - mpz_class(start_num);              // Convert mpz_class to mpf_class
@@ -62,8 +71,8 @@ int main() {
                 mpz_add(current_num.get_mpz_t(), current_num.get_mpz_t(), i.get_mpz_t());
 
 
-                
-                if (prime_tools.primeCheck(current_num) == prime_certainty) {
+                //cout << "Current Prime Percent: " << prime_tools.primeCheck(current_num) << endl;
+                if (prime_tools.primeCheck(current_num) >= prime_certainty) {
 
 
                     prime_list.push_back(current_num);
@@ -80,6 +89,8 @@ int main() {
             mpf_class j_prime_percentage = (mpf_class(j_list_size) / mpf_class(i-1)) * 100;
 
             if (j_prime_percentage >= 50) {
+
+                logFile << "----------------" << endl;
                 
                 logFile << "Caboose Number: " << i << endl;
                 

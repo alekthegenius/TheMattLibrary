@@ -1,0 +1,48 @@
+Caboose Number: 3
+Number of Primes: 2
+Percentage of Primes: 100
+Caboose Number: 5
+Number of Primes: 4
+Percentage of Primes: 100
+Caboose Number: 7
+Number of Primes: 4
+Percentage of Primes: 66.6667
+Caboose Number: 11
+Number of Primes: 10
+Percentage of Primes: 100
+Caboose Number: 17
+Number of Primes: 16
+Percentage of Primes: 100
+Caboose Number: 41
+Number of Primes: 40
+Percentage of Primes: 100
+Caboose Number: 47
+Number of Primes: 26
+Percentage of Primes: 56.5217
+Caboose Number: 59
+Number of Primes: 34
+Percentage of Primes: 58.6207
+Caboose Number: 67
+Number of Primes: 36
+Percentage of Primes: 54.5455
+Caboose Number: 101
+Number of Primes: 68
+Percentage of Primes: 68
+Caboose Number: 107
+Number of Primes: 71
+Percentage of Primes: 66.9811
+Caboose Number: 161
+Number of Primes: 81
+Percentage of Primes: 50.625
+Caboose Number: 221
+Number of Primes: 129
+Percentage of Primes: 58.6364
+Caboose Number: 227
+Number of Primes: 132
+Percentage of Primes: 58.4071
+Caboose Number: 347
+Number of Primes: 175
+Percentage of Primes: 50.578
+Caboose Number: 377
+Number of Primes: 191
+Percentage of Primes: 50.7979
