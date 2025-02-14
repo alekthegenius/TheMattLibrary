@@ -3,13 +3,9 @@
 
 #include <iostream>
 #include <random>
-#include <cmath>
-#include <ctime>
 #include <gmp.h>
 #include <gmpxx.h>
-#include <cstdlib>
 #include <vector>
-#include <regex>
 #include <sstream>
 using namespace std;
 
@@ -49,7 +45,7 @@ mpz_class primeGenerator(mpz_class bit_length, int prime_certainty = 2) {
         
     } while (prime_flag == false);
 
-    
+
     return rand_bits;
 }
 
