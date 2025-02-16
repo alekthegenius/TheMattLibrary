@@ -34,6 +34,9 @@ int main() {
             return 0;
         }
 
+        logFile << "Start Number: " << start_num << endl;
+        logFile << "End Number: " << end_num << endl;
+
         mpz_sub(iterations.get_mpz_t(), mpz_class(end_num).get_mpz_t(), mpz_class(start_num).get_mpz_t());
 
         vector<mpz_class> prime_list;

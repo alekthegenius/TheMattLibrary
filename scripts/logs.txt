@@ -1,3 +1,5 @@
+Start Number: 2
+End Number: 500
 ----------------
 Caboose Number: 3
 Number of Primes: 2
@@ -62,3 +64,4 @@ Percentage of Primes: 50.578
 Caboose Number: 377
 Number of Primes: 191
 Percentage of Primes: 50.7979
+Number of Primes: 13438

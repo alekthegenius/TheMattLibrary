@@ -7,12 +7,13 @@
 #include <gmpxx.h>
 #include <vector>
 #include <sstream>
+#include "randomTools.h"
 using namespace std;
 
 class primeTools {
   public:
     mpz_class primeCheck(mpz_class num);
-    mpz_class primeGenerator(mpz_class bit_length);
+    mpz_class primeGenerator(mpz_class bit_length, int prime_certainty);
 };
 
 mpz_class primeTools::primeCheck(mpz_class num) {
@@ -21,24 +22,20 @@ mpz_class primeTools::primeCheck(mpz_class num) {
 }
 
 
-mpz_class primeGenerator(mpz_class bit_length, int prime_certainty = 2) {
+mpz_class primeTools::primeGenerator(mpz_class bit_length, int prime_certainty = 2) {
+
+    randomTools random_tools;
 
     bool prime_flag = false;
-
-    random_device rd;
-    
-    gmp_randclass rr(gmp_randinit_mt);
-    unsigned long seed = rd();
-    rr.seed(seed);
 
     mpz_class rand_bits;
 
     do {
-        rand_bits = rr.get_z_bits(bit_length);
+        rand_bits = random_tools.randomBitGenerator(bit_length);
 
         int prime_prob = mpz_probab_prime_p(rand_bits.get_mpz_t(), 100);
 
-        if (prime_prob != 0) {
+        if (prime_prob >= prime_certainty) {
             prime_flag = true;
         }
         
